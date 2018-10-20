@@ -11,6 +11,19 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+
+Route::get('/','PagesController@home');
+
+// if user comes to / -> execute the method -> return view -> welcome.(blade).php
+
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+
+Route::get('/contact', function () {
+    return view('contact');
+});
+
+Route::get('/about', function () {
+    return view('about');
 });
